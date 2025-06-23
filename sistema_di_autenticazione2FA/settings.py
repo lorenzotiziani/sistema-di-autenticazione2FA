@@ -21,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-*a&iyf6c=4d+c*x^$svm+%v=ig5z_lq*s9!4*r02@!0$e3$f)('
+SECRET_KEY = ''
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -118,22 +118,14 @@ REST_FRAMEWORK = {
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ),
 }
-"""
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.mailersend.net'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'MS_HjzWSd@test-zkq340ep0d3gd796.mlsender.net'
-EMAIL_HOST_PASSWORD = 'mssp.EiF6g2M.3yxj6lje3e7gdo2r.ecpI4nS'
-DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
-"""
+
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'lorenzo.tiziani@allievi.itsdigitalacademy.com'
-EMAIL_HOST_PASSWORD = 'dqao utei oluj heym'
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
 
 
 
